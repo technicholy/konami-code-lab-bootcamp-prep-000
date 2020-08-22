@@ -12,7 +12,7 @@ const codes = [
 ];
 var capList = [];
 function onKeyDownHandler(e){
-  const key = e.key;  
+  const key = e.key;
   switch (key){
     case ((key === "ArrowUp") && (capList === [])):
       capList.push(key);
@@ -46,7 +46,7 @@ function onKeyDownHandler(e){
       break;
     default:
       capList = []
-    
+
   }
 }
 function init() {
@@ -54,6 +54,6 @@ function init() {
     if (capList === codes){
       return capList
     }
-    
+
   }
 }
