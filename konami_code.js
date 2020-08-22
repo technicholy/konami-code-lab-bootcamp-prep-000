@@ -51,9 +51,6 @@ function onKeyDownHandler(e){
 }
 function init() {
   document.body.addEventListener("keydown", onKeyDownHandler) {
-    if (capList === codes){
-      return capList
-    }
-
+    return capList
   }
 }
