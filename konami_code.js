@@ -50,9 +50,9 @@ function onKeyDownHandler(e){
   }
 };
 function init() {
-  document.body.addEventListener("keydown", onKeyDownHandler) {
+  document.body.addEventListener("keydown", onKeyDownHandler()) {
     if (capList === codes){
-      alert("Congratulations")
+      alert("Hurray")
     }
   }
 };
