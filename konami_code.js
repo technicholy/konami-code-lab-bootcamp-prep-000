@@ -48,11 +48,11 @@ function onKeyDownHandler(e){
       capList = []
 
   }
-}
+};
 function init() {
   document.body.addEventListener("keydown", onKeyDownHandler) {
     if (capList === codes){
       alert("Congratulations")
     }
   }
-}
+};
