@@ -20,26 +20,26 @@ describe("index.js", () => {
     const keyboardEvent = new KeyboardEvent("keydown", { key });
     document.body.dispatchEvent(keyboardEvent);
   }
-  
+
   describe("Konami code", () => {
-    
+
 
     it("triggers an alert if the right code is entered", () => {
       init()
       // var savedAlert = window.alert
-      // 
+      //
       // try {
       //   var spy = sinon.spy(window, 'alert');
       //   init()
-      // 
+      //
       //   for (let i = 0, l = codes.length; i < l; i++) {
       //     triggerKeyDown(codes[i]);
       //   }
-      // 
+      //
       //   expect(spy.called).to.equal(true);
       //   expect(spy.firstCall.firstArg).to.include("Hurray");
-      //  } 
-      // 
+      //  }
+      //
       // finally { window.alert = savedAlert; }
     });
 
@@ -56,9 +56,9 @@ describe("index.js", () => {
         triggerKeyDown("ArrowUp")
 
         expect(spy.notCalled).to.equal(true);
-       } 
-       
-      
+       }
+
+
       finally { window.alert = savedAlert; }
 
     });
